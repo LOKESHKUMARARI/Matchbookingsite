@@ -75,11 +75,21 @@ Audiences can view match details and book tickets.
 ### Home Page:
 ![Screenshot (182)](https://github.com/user-attachments/assets/d85f4016-07e4-40c0-9f15-0fffe1d9c0ff)
 
+### Add match Page:
+
 ![Screenshot (183)](https://github.com/user-attachments/assets/562d281b-eb6f-4a5b-9ba3-1a3e14b6c2d6)
 
-![Screenshot (184)](https://github.com/user-attachments/assets/9990cb5b-eaf7-43dc-aa4e-f91047e4a24f)
+
+![Screenshot (189)](https://github.com/user-attachments/assets/f9709807-acc6-4fd1-9eac-cfef44d920aa)
+
+### Match View Page:
 
 ![Screenshot (186)](https://github.com/user-attachments/assets/ed12ba56-ec51-4132-8063-76567aeee23d)
+
+### Register Page:
+
+![Screenshot (184)](https://github.com/user-attachments/assets/9990cb5b-eaf7-43dc-aa4e-f91047e4a24f)
+ 
 
 
 ### Suceess page
