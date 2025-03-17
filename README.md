@@ -29,35 +29,41 @@ Audiences can view match details and book tickets.
 
 1. Install **MySQL Workbench** and **MySQL Server**.  
 2. Create a new database:  
-   ```sql
+   
    CREATE DATABASE cricket_club;
-   ```
+   
 3. Create required tables:  
-   ```sql
-   CREATE TABLE matches (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       team1 VARCHAR(50),
-       team2 VARCHAR(50),
-       venue VARCHAR(100),
-       match_date DATE,
-       match_time TIME
-   );
+  
+  CREATE TABLE MatchInfo (
+    match_id INT AUTO_INCREMENT PRIMARY KEY,
+    match_name VARCHAR(50),
+    match_date DATE,
+    place VARCHAR(50)
+);
 
-   CREATE TABLE players (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       name VARCHAR(100),
-       age INT,
-       role VARCHAR(50),
-       team VARCHAR(50)
-   );
 
-   CREATE TABLE tickets (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       match_id INT,
-       user_name VARCHAR(100),
-       FOREIGN KEY (match_id) REFERENCES matches(id)
-   );
-   ```
+
+
+  CREATE TABLE Register (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    dob DATE,
+    city VARCHAR(50),
+    gender ENUM('Male', 'Female', 'Other'),
+    age INT
+);
+
+
+
+
+CREATE TABLE TicketBooking (
+    booking_id INT AUTO_INCREMENT PRIMARY KEY,
+    match_name VARCHAR(50),
+    user_name VARCHAR(100),
+    ticket_count INT
+);
+
+   
 4. Configure MySQL database connection in the Java backend.  
 
 ## How to Run
@@ -89,14 +95,18 @@ Audiences can view match details and book tickets.
 ### Register Page:
 
 ![Screenshot (184)](https://github.com/user-attachments/assets/9990cb5b-eaf7-43dc-aa4e-f91047e4a24f)
+
+### BOOKING Page:
+![Screenshot (187)](https://github.com/user-attachments/assets/32329456-53a2-42e0-a793-a955afe74622)
+
  
 
 
-### Suceess page
+### Suceess Page:
  
 ![Screenshot (185)](https://github.com/user-attachments/assets/6354b2ec-b013-4f7a-b0d1-91e1f46a81ad)
 
-### ERROR PAGE
+### ERROR Page:
 ![Screenshot (192)](https://github.com/user-attachments/assets/3219e17b-630d-4cbd-b30b-898fe2c2cdbf)
 
 ![Screenshot (193)](https://github.com/user-attachments/assets/63327dd3-2588-4aa7-829d-eabb7a2446f8)
